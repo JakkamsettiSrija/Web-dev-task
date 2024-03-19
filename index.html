@@ -106,8 +106,9 @@ p {
 .description {
   position: absolute;
   top: 100%; 
-  left: 0;
-  width: 100%; 
+  left: 50;
+  width: 100%;
+  transform: translateX(-50%);
   background-color: rgba(218, 214, 214, 0.8); 
   color: #5f5e5e; 
   padding: 10px;
@@ -152,8 +153,9 @@ p {
 }
 @media only screen and(max-width: 768px) {
   .team-member {
-    width: 100%;
-    margin-right: 0;
+    width: calc(50% - 10px);
+    margin-right: 20px;
+    margin-bottom: 20px;
   }
 }
 </style>
