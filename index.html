@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZenithSoft</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+.body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    font-size: 30px;
+}
+h1{
+    font-size: 36px;
+}
+h2 {
+    font-size: 18px;
+}
+p {
+    font-size: 18px;
+}
+.container{
+    max-width: 960px;
+    margin: auto;
+    padding :20px;
+}
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 0;
+  margin: 10px 0;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  text-align: center;
+  z-index: 1000;
+  font-size: 50px;
+}
+.header {
+    margin: 0;
+}
+.navigation {
+    padding: 0;
+    margin: 0;
+}
+ 
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ 
+.navigation ul li {
+  display: inline;
+  margin-right: 20px;
+}
+ 
+#about{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.team-container {
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 55px;
+}
+ 
+.team-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 200px;
+}
+ 
+.team-member {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 50px;;
+}
+ 
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #333;
+}
+ 
+.team-member-info h3 {
+  margin: 10px 0;
+}
+ 
+.team-member-info p {
+  font-style: italic;
+}
+
+.description {
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  width: 100%; 
+  background-color: rgba(218, 214, 214, 0.8); 
+  color: #5f5e5e; 
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  margin-bottom: 55px;;
+}
+.about p{
+    font-size: 44px;
+}
+ 
+.team-member:hover .description {
+    opacity: 1;
+  display: block;
+}
+.team-member founder {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+  position: relative;
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  margin-right: 20px;
+}
+.team-member img{
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #696969;
+}
+.founder-image{
+    width:500px;
+    height: 350px;
+    object-fit: cover;
+    border:3px solid #696969;
+}
+.team-group founders {
+    margin-bottom: 400px;
+}
+</style>
+<body>
+  <header class="header">
+    <h1>ZenithSoft</h1>
+  </header>
+  <div class="container">
+  <section id="about">
+    <h2>About us</h2>
+    <p>ZenithSoft Solutions is a leading software development company renowned for its innovative solutions and exceptional client service. Established in 2005 by a group of visionary technologists, ZenithSoft has rapidly grown into a global player in the software industry.
+ 
+        At ZenithSoft, our mission is to empower businesses with cutting-edge technology solutions that drive growth, efficiency, and innovation. We specialize in a wide range of services including custom software development, web and mobile application development, cloud computing, artificial intelligence, and blockchain technology.
+         
+        What sets ZenithSoft apart is our commitment to excellence and customer satisfaction. We believe in a collaborative approach, working closely with our clients to understand their unique needs and deliver tailor-made solutions that exceed expectations. Our team of highly skilled engineers, designers, and project managers are dedicated to delivering high-quality software solutions on time and within budget.
+         
+        ZenithSoft's success is built on a foundation of innovation and continuous improvement.</p>
+  </section>
+  </div>
+ 
+  <section id="team" class="team-container">
+    <h2>Founders</h2>
+ 
+    <!-- Founders -->
+    <div class="team-group founders">
+        <div class="team-member">
+            <img src="images/founder 1.jpg" alt="Founder 1" class="founder-image">
+            <div class="team-member-info">
+                <h3>Alexandra Cruz</h3>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="description">
+                <p>Alexandra Cruz is one of the founders of X Company. With a background in technology and a passion for entrepreneurship, she played a key role in establishing the company and driving its early growth.</p>
+            </div>
+        </div>
+ 
+        <div class="team-member">
+            <img src="images/founder 2.jpg" alt="Founder 2" class="founder-image">
+            <div class="team-member-info">
+                <h3>Ethan</h3>
+                <p>Co-founder</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="description">
+                <p>Ethan is a co-founder of X Company. With expertise in business development and strategy, he contributed to the company's vision and mission from its inception, shaping its trajectory in the industry.</p>
+            </div>
+        </div>
+    </div>
+    <h2>Development Team</h2>
+    <!-- Development Team -->
+    <div class="team-group">
+        <div class="team-member">
+            <img src="images\dev 1.jpg" alt="Developer 1">
+            <div class="team-member-info">
+                <h3>Alex Johnson</h3>
+                <p>Frontend Developer</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="description">
+                <p>Alex is a passionate frontend developer with expertise in creating responsive and intuitive user interfaces. With a keen eye for design and detail, Alex ensures seamless user experiences across all platforms.</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="images\dev 2.jpg" alt="Developer 2">
+            <div class="team-member-info">
+                <h3>Max Rodriguez</h3>
+                <p>Backend Developer</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="description">
+                <p>Max is an experienced backend developer with a knack for building efficient and secure server-side applications. He specializes in database management and API development, ensuring optimal performance and reliability.</p>
+            </div>
+        </div>
+        <div class="team-member">
+           
+            <img src="images\dev 3.jpg" alt="Developer 2">
+            <div class="team-member-info">
+                <h3>Sophia Lee</h3>
+                <p>UI/UX Designer</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="description">
+                <p>Sophia is a creative UI/UX designer who excels in crafting visually stunning and user-centric interfaces. With a strong understanding of user behavior and industry trends, Sophia brings designs to life that captivate and engage audiences.</p>
+            </div>
+            
+        </div>
+        <div class="team-member">
+            
+            <img src="images\dev 4.jpg" alt="Developer 2">
+            <div class="team-member-info">
+                <h3>Ryan Patel</h3>
+                <p>Full Stack Developer</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="description">
+                <p>JRyan is a versatile full stack developer proficient in both frontend and backend technologies. With a holistic approach to development, Ryan delivers end-to-end solutions that are scalable, maintainable, and user-friendly.</p>
+            </div>
+        </div>
+        <div class="team-member">
+            
+            <img src="images\dev 5.jpg" alt="Developer 2">
+            <div class="team-member-info">
+                <h3>Jane Smith</h3>
+                <p>Web Developer</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="description">
+                <p>Jane Smith is a skilled web developer at X Company. She crafts beautiful and functional user interfaces.</p>
+            </div>
+        </div>
+    </div>
+    <h2>Sales Team</h2>
+    <!-- Sales Team -->
+    <div class="team-group">
+        <div class="team-member">
+            <img src="images\sales 1.jpg" alt="Sales Executive">
+            <div class="team-member-info">
+                <h3>Michael</h3>
+                <p>Sales Executive</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="description">
+                <p>Michael is a dynamic sales professional known for his excellent communication skills and persuasive abilities. He is passionate about providing exceptional customer service and driving revenue growth.</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="images\sales 2.jpg" alt="Sles Executive">
+            <div class="team-member-info">
+                <h3>David brown</h3>
+                <p>Sales Executive</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="description">
+                <p>David is a proactive sales associate with a strong attention to detail. He thrives in fast-paced environments and enjoys collaborating with cross-functional teams to achieve sales objectives.</p>
+            </div>
+        </div>
+        <div class="team-member">
+            
+            <img src="images\sales 3.jpg" alt="Sales Representative">
+            <div class="team-member-info">
+                <h3>Jane Smith</h3>
+                <p>Sales Representative</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="description">
+                <p>Jane Smith is a skilled web developer at X Company. She crafts beautiful and functional user interfaces.</p>
+            </div>
+            
+        </div>
+        <div class="team-member">
+            
+            <img src="images\sales 4.jpg" alt="Sarah Johnson">
+            <div class="team-member-info">
+                <h3>Sarah Johnson</h3>
+                <p>Sales Manager</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="description">
+                <p>Sarah is a highly motivated sales professional with a proven track record of exceeding targets. She excels in building strong relationships with clients and identifying new business opportunities.</p>
+            </div>
+        </div>
+        <div class="team-member">
+            
+            <img src="images\sales 5.jpg" alt="Sales Coordinator">
+            <div class="team-member-info">
+                <h3>Jessica Martinez</h3>
+                <p>Sales Coordinatorr</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="description">
+                <p>Jessica is an organized and efficient sales coordinator with a passion for delivering results. She possesses excellent organizational skills and enjoys streamlining sales processes to enhance efficiency.</p>
+            </div>
+        </div>
+    </div>
+ 
+  </section>
+</body>
+</html>
